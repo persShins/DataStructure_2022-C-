@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main(void)
+{
+	// 이 과정을 몇번 돌릴껀지 입력 받기
+	// 배열로 카드 숫자 개수 입력 후 6은 9로 돌리기
+	// 몇 장인지 모두 더해서 카드 개수 알아내기
+	// 큰 숫자는 양쪽부터(왼 먼저) 입력
+	// 출력
+	int t;
+	int card[8] = {0, };
+	int array[100];
+	int a[1000];
+	int i,cnt;
+	int j,sum = 0;
+
+	printf("테스트 케이스 횟수를 입력하시오:");
+	scanf("%d", &t);
+
+	for (i = 0; i < t; i++) {
+		printf("차례대로 카드 개수 입력");
+		scanf("%d", &card[i]);
+		sum += card[i]; //카드 개수
+	}
+		if (card[5] > 0) {
+			card[8] += card[5]; //6이 다 9로 옮겨짐
+			card[5] = 0;
+		}
+		//여기부터 망함
+		for (i = 9; i >= 0; i--) {
+			cnt = card[i];
+			for (int k = 0; k < cnt; k++) {
+				array[j] = i+1;
+				j++;
+			}
+			printf("%d", j);
+		}
+
+		for (i = 0; i < sum; i++) {
+			if (j % 2 == 0) {
+				a[j] = array[i];
+				j++;
+			}
+			else {
+				a[sum + 1 - j] = array[i];
+				j++;
+			}
+		}
+
+		printf("%d ", &array[sum]);
+
+		return 0;
+	}
