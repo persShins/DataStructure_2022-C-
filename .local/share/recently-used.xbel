@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/ehdbs425/DataStructure_2022-C-/2019271341_doyoonkim/test.c" added="2022-03-28T13:12:10Z" modified="2022-03-28T13:13:54Z" visited="2022-03-28T13:12:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csrc"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2022-03-28T13:13:54Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ehdbs425/Pictures/Screenshot%20from%202022-03-28%2006-44-23.png" added="2022-03-28T13:44:23Z" modified="2022-03-28T13:44:23Z" visited="2022-03-28T13:44:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2022-03-28T13:44:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ehdbs425/2019271341_doyoon/baekjoon_10872.c" added="2022-03-29T08:17:03Z" modified="2022-03-29T08:17:03Z" visited="2022-03-29T08:17:03.911088Z">
+    <title>baekjoon_10872.c</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csrc"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit file:///home/ehdbs425/2019271341_doyoon/2019271341_doyoon02.c&apos;" modified="2022-03-29T08:17:03Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
