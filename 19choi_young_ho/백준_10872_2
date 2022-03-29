@@ -1,0 +1,14 @@
+#include <stdio.h>//재귀함수 함수 내에서 자기자신을 호출 하는 함수
+
+int fac(int num) { 
+	if (num == 1)
+		return 1;//num 값이 1이 되면 함수를 종료하기 위한 종료 조건
+	else
+		return num * fac(--num);//재귀함수를 사용해서 num값을 1씩 줄여서 반복 호출
+}
+int main()
+{
+	int a;
+	scanf("%d", &a);
+	printf("%d", fac(a));
+}
