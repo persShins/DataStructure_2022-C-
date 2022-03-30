@@ -7,47 +7,63 @@ int main(void)
 	// 몇 장인지 모두 더해서 카드 개수 알아내기
 	// 큰 숫자는 양쪽부터(왼 먼저) 입력
 	// 출력
+	#define _CRT_SECURE_NO_WARININGS
+#include<stdio.h>
+
+int main() {
+
+	int card[9];
 	int t;
-	int card[8] = {0, };
 	int array[100];
-	int a[1000];
-	int i,cnt;
-	int j,sum = 0;
+	int left = 0;
+	
 
 	printf("테스트 케이스 횟수를 입력하시오:");
-	scanf("%d", &t);
+	scanf_s("%d", &t);
 
-	for (i = 0; i < t; i++) {
-		printf("차례대로 카드 개수 입력");
-		scanf("%d", &card[i]);
-		sum += card[i]; //카드 개수
-	}
+	printf("차례대로 카드 개수 입력");
+	for (int i = 0; i < t; t++) {
+		int sum = 0;
+		for (i = 0; i < 9; i++) {
+			scanf_s("%d", &card[i]);
+			sum += card[i]; //카드 개수
+		}
+		printf("%d \n", sum);
+
 		if (card[5] > 0) {
 			card[8] += card[5]; //6이 다 9로 옮겨짐
 			card[5] = 0;
 		}
-		//여기부터 망함
-		for (i = 9; i >= 0; i--) {
-			cnt = card[i];
-			for (int k = 0; k < cnt; k++) {
-				array[j] = i+1;
-				j++;
-			}
-			printf("%d", j);
-		}
+		
+		for (i = 0; i < 9; i++)
+			printf("%d ", card[i]);
+		printf("\n");
 
-		for (i = 0; i < sum; i++) {
+		//
+		int cnt = 9;
+		int right = sum - 1;
+		for (int j = 0; j < sum; j++) {
+			if (card[cnt] == 0)
+				cnt--;
+
 			if (j % 2 == 0) {
-				a[j] = array[i];
-				j++;
+				array[left] = cnt;
+				left++;
+				
 			}
 			else {
-				a[sum + 1 - j] = array[i];
-				j++;
+				array[right] = cnt;
+				right--;
+				
 			}
+			card[cnt]--;
 		}
-
-		printf("%d ", &array[sum]);
-
-		return 0;
+		for (int i = 0; i < sum; i++)
+			printf("%d ", array[i]);
+		printf("\n");
 	}
+		return 0;
+
+	
+}
+
