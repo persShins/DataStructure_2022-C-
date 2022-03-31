@@ -4,13 +4,13 @@
 
 int main()
 {
-	    int a;
-	        int time = 1;
-		    scanf(" %d", &a);
-		        for (int i = 1; i <= a; i++)
-				    {
-					            time *= i;
-						        }
-			    printf("%d", time);
-			        return 0;
+	int a;
+	int time = 1;
+	scanf(" %d", &a);
+	for (int i = 1; i <= a; i++)
+	{
+		time *= i;
+	}
+	printf("%d", time);
+	return 0;
 }
