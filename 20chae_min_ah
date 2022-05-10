@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+        int num;
+        int arr[9]= {};
+        int result[1000];
+        int total_num;
+        scanf("%d ",&num); // input number of card
+        for(int n = 0; n <num; n++){
+                for(int i = 0; i<9; i++){
+                        scanf("%d",&arr[i]); //input number of each card in array
+                        total_num += arr[i];
+                }
+                if( arr[5] != 0){
+
+                        arr[8] += arr[5];
+                        arr[5] = 0;
+                }
+                int temp =0;
+                for(int i = 0; i <9; i++){
+                        for(int j
+                return 0;
+}
